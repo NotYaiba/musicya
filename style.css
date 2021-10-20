@@ -1,0 +1,263 @@
+
+body, html {
+    height: 100vh;
+    background-color: black !important;
+    padding: 0%;
+    margin: 0%;
+  }
+.nnavbar{
+    /* padding: 0 3%; */
+    height: 70px;
+    width: 94%;
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0px 30px;
+    z-index: 10;
+}
+.logo{
+    /* margin-left: 3%; */
+    width: 250px;
+    height: 250px;
+    
+    z-index: 4;
+    animation: floating 3s ease-in-out infinite;
+    margin-bottom: 20px;
+}
+.logoimg{
+    width: 100%;
+    height:  100%;
+    object-fit: cover;
+    
+}
+
+.button{
+    width: 100px;
+    height:  30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    transition: all 200ms;
+     border: 1px solid #ffffff;
+
+}
+.button:hover
+{
+    background-color: #000;
+    color: #ffffff;
+}
+.img{
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+
+}
+.immg{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+}
+
+.bgimg {
+    /* Background image */
+    /* background-image: url('/w3images/forestbridge.jpg'); */
+    background-image: url("./landing.png");
+    /* filter: blur(5px);
+    -webkit-filter: blur(5px); */
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+    z-index: 2;
+  }
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 4;
+    
+  }
+  .h1{
+    font-size: 3rem;
+    font-family: 'Monoton', cursive;
+    font-weight: 200;
+    color: #3AC0E0;
+    color: #ba03fc;
+
+    transform: scale(1);
+    z-index: 4;
+
+  }
+  /* Style the <hr> element */
+
+  #demo{
+      color: #ffffff;
+      font-size: 40px;
+      letter-spacing: 5px;
+
+  }
+  .menu
+{
+
+  overflow: hidden;
+  width: 50px;
+  z-index: 4;
+
+  cursor: pointer;
+}
+
+.menu  span
+{
+  height: 3px;
+  display: block;
+  margin: 6px;
+  background: white;
+  transition: 0.4s all;
+}
+
+.s1, .s3
+{
+  width: 100%;
+}
+
+.s2
+{
+  width: 70%;
+}
+
+.menu > a:hover > .s2
+{
+  width: 100%;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+}	
+.modal-newsletter {	
+    color: #999;
+    font-size: 15px;
+}
+.modal-newsletter .modal-content {
+    padding: 40px;
+    border-radius: 0;		
+    border: none;
+}
+.modal-newsletter .modal-header {
+    border-bottom: none;   
+    position: relative;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+.modal-newsletter h4 {
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.modal-newsletter .close {
+    background: #c0c3c8;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #fff;
+    text-shadow: none;
+    opacity: 0.5;
+    width: 22px;
+    height: 22px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.modal-newsletter .close span {
+    position: relative;
+    top: -1px;
+}
+.modal-newsletter .close:hover {
+    opacity: 0.8;
+}
+.modal-newsletter .icon-box {
+    color: #7265ea;		
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.modal-newsletter .icon-box i {
+    font-size: 110px;
+}
+.modal-newsletter .form-control, .modal-newsletter .btn {
+    min-height: 46px;
+    border-radius: 3px; 
+}
+.modal-newsletter .form-control {
+    box-shadow: none;
+    border-color: #dbdbdb;
+}
+.modal-newsletter .form-control:focus {
+    border-color: #7265ea;
+    box-shadow: 0 0 8px rgba(114, 101, 234, 0.5);
+}
+.modal-newsletter .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #7265ea;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    padding: 6px 20px;
+    min-width: 150px;
+    border: none;
+}
+.modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
+    background: #4e3de4;
+    outline: none;
+}
+.modal-newsletter .input-group {
+    margin: 30px 0 15px;
+}
+.hint-text {
+    margin: 100px auto;
+    text-align: center;
+}
